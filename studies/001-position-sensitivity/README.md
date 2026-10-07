@@ -1,7 +1,5 @@
 # Technical Note 001 — Position Sensitivity in Pairwise LLM Judging
 
-## Manuscript
-
 **We Tried to Reproduce LLM Judge Position Bias. The Evidence Wasn't Strong Enough.**
 
 A controlled replication and experimental-assurance study of response-order sensitivity in pairwise LLM judging.
@@ -10,6 +8,8 @@ Author: Derry Mitchell
 Viridian  
 5 October 2026  
 Status: revised technical manuscript for public release; not peer reviewed.
+
+[View the v1 GitHub release](https://github.com/ViridianAIQualityAssurance/viridian-assurance-research/releases/tag/study-001-v1)
 
 ## Research question
 
@@ -42,10 +42,10 @@ The observed reversal switch rate was **1/20 = 5%**. The exact 95% Clopper-Pears
 
 Candidate models:
 
-- `Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B` — architecture `Qwen3_5ForConditionalGeneration`
-- `K2 Horizon 3.7B` — architecture `K2HorizonForCausalLM`
+- Jackrong/DeepSeek-V4-Pro-Qwen3.5-4B — architecture Qwen3_5ForConditionalGeneration
+- K2 Horizon 3.7B — architecture K2HorizonForCausalLM
 
-Candidate generation used local model-native chat templates, greedy decoding, `max_new_tokens=256`, BF16 with bitsandbytes 8-bit quantisation, SDPA attention, and `device_map=auto`.
+Candidate generation used local model-native chat templates, greedy decoding, max_new_tokens=256, BF16 with bitsandbytes 8-bit quantisation, SDPA attention, and device_map=auto.
 
 The evaluator was GPT-5.6 Sol through ChatGPT using the frozen pairwise rubric. The judge-facing packet exposed only the evaluation identifier, user prompt, Response A, and Response B.
 
@@ -66,11 +66,12 @@ After the evidence package was frozen, Viridian Osmium evaluated the study using
 
 This is a reproducibility/product-behaviour check on Viridian's assurance implementation, **not** an independent scientific replication and not additional evidence about GPT-5.6 Sol.
 
-## Public manuscript
-
-The source manuscript is the 17-page Viridian Technical Note 001 dated 5 October 2026. The original DOCX can be stored in this directory alongside the readable repository materials.
-
-See:
+## Study materials
 
 - [Frozen judge rubric](judge_rubric.md)
 - [Selected artifact identities](integrity.md)
+- [Release notes](RELEASE_NOTES.md)
+- [Technical Note 002 — Evaluator Contract Stability](../002-evaluator-contract-stability/)
+- [Technical Note 003 — Presentation / Serialization Sensitivity](../003-presentation-serialization-sensitivity/)
+
+The source manuscript is Viridian Technical Note 001 dated 5 October 2026. The original DOCX is intentionally not included in this repository.
