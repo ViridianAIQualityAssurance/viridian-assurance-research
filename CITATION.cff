@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository or its technical notes, please cite the repository and the specific Technical Note used."
+title: "Viridian Assurance Research"
+authors:
+  - family-names: "Mitchell"
+    given-names: "Derry"
+date-released: 2026-10-07
+repository-code: "https://github.com/ViridianAIQualityAssurance/viridian-assurance-research"
+url: "https://viridianassurance.com"
+keywords:
+  - "LLM-as-a-judge"
+  - "LLM evaluation"
+  - "AI evaluation"
+  - "model evaluation"
+  - "benchmarking"
+  - "benchmark verification"
+  - "evaluator reliability"
+  - "position bias"
+  - "reproducibility"
+  - "provenance"
+  - "experimental validity"
+  - "experimental assurance"
