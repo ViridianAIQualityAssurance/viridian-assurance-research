@@ -4,13 +4,13 @@
 
 For the same 20 prompts, exact substantive candidate response strings, and fixed A/B orientation inherited from the parent position-sensitivity study, does adding a standardized, semantically inert boundary wrapper to one candidate change pairwise judge decisions?
 
+[View the combined 002–003 v1 release](https://github.com/ViridianAIQualityAssurance/viridian-assurance-research/releases/tag/studies-002-003-v1)
+
 The wrapper was:
 
-```text
-<<<BEGIN CANDIDATE RESPONSE>>>
-<unchanged response text>
-<<<END CANDIDATE RESPONSE>>>
-```
+    <<<BEGIN CANDIDATE RESPONSE>>>
+    <unchanged response text>
+    <<<END CANDIDATE RESPONSE>>>
 
 No character inside the original response text was edited, removed, normalized, or reordered.
 
@@ -47,9 +47,11 @@ The frozen plan required a fresh isolated judge context for every condition. At 
 
 Accordingly, this completed run should be treated as an **exploratory/operational execution of the frozen protocol**, not a clean confirmatory test of between-context presentation sensitivity.
 
-See:
+## Study materials
 
 - [Frozen analysis plan](analysis_plan.md)
 - [Analysis summary](analysis_summary.md)
 - [Judge execution note](judge_execution_note.md)
 - [Integrity record](integrity.md)
+- [Parent study — Technical Note 001](../001-position-sensitivity/)
+- [Technical Note 002 — Evaluator Contract Stability](../002-evaluator-contract-stability/)
